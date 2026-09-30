@@ -1,0 +1,45 @@
+name: knowledge-system-demo
+
+services:
+  knowledge-system-demo:
+    container_name: knowledge-system-demo
+    build:
+      context: .
+    restart: unless-stopped
+
+    environment:
+      OLLAMA_API_KEY: ${OLLAMA_API_KEY:?OLLAMA_API_KEY is required}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-gemma4}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-https://ollama.com}
+      OLLAMA_TIMEOUT_SECONDS: ${OLLAMA_TIMEOUT_SECONDS:-30}
+
+    networks:
+      - vps-network
+
+    labels:
+      - "traefik.enable=true"
+
+      # Traefik must use the shared external Docker network.
+      - "traefik.docker.network=vps-network"
+
+      # HTTPS router.
+      - "traefik.http.routers.knowledge-system-demo.entrypoints=websecure"
+
+      # Hardcoded public domain (same convention as barmeasure.shounakdev.tech).
+      - "traefik.http.routers.knowledge-system-demo.rule=Host(`knowledge-system-demo.shounakdev.tech`)"
+
+      # Existing Traefik Let's Encrypt resolver.
+      - "traefik.http.routers.knowledge-system-demo.tls.certresolver=letsencrypt"
+
+      # Gunicorn listens on port 8000 inside the container.
+      - "traefik.http.services.knowledge-system-demo.loadbalancer.server.port=8000"
+
+      # HSTS for this hostname only - no includeSubDomains.
+      - "traefik.http.middlewares.knowledge-system-demo-hsts.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.knowledge-system-demo-hsts.headers.forceSTSHeader=true"
+
+      - "traefik.http.routers.knowledge-system-demo.middlewares=knowledge-system-demo-hsts"
+
+networks:
+  vps-network:
+    external: true

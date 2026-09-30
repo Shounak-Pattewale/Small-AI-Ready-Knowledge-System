@@ -1,0 +1,52 @@
+# Version control
+.git
+.gitignore
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.pid
+
+# Development-only / not needed by the runtime image:
+# - raw source documents: only the persisted storage/ artifacts are read at runtime
+# - docs, research, tests: not imported by the running app
+# - manual_tests: a diagnostic script run against an already-running server
+# - project docs / AI usage notes: reviewer-facing, not application code
+data/
+docs/
+research/
+tests/
+manual_tests/
+.claude/
+README.md
+AI_USAGE.md
+cli.py

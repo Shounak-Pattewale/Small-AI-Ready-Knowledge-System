@@ -7,3 +7,4 @@ torch
 numpy
 flask
 python-dotenv
+gunicorn==26.2.0
