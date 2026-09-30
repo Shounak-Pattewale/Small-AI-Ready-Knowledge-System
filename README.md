@@ -1,5 +1,7 @@
 # Small AI-Ready Knowledge System
 
+**Live demo:** [knowledge-system-demo.shounakdev.tech](https://knowledge-system-demo.shounakdev.tech/)
+
 An internal-company knowledge assistant that answers policy and support questions
 from a small document set, using semantic retrieval and grounded LLM generation.
 Built as a NALITS AI Solution Engineer take-home submission.
@@ -140,7 +142,7 @@ python3 cli.py --mode baseline  # MiniLM extractive QA, no LLM call
 
 ## Deployment
 
-Deployment target (not yet live/verified): `https://knowledge-system-demo.shounakdev.tech`
+Live at: `https://knowledge-system-demo.shounakdev.tech`
 
 ```
 Cloudflare
