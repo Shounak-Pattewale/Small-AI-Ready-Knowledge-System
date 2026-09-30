@@ -1,0 +1,9 @@
+pypdf
+pytest
+docling
+sentence-transformers
+transformers
+torch
+numpy
+flask
+python-dotenv

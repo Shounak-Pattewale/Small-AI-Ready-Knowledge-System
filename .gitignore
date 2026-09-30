@@ -1,0 +1,43 @@
+# Virtual environment / Python caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / runtime
+*.log
+*.pid
+
+# Secrets / local env overrides
+.env
+.env.*
+!.env.example
+
+# storage/chunks.json is intentionally TRACKED (not ignored): the VPS
+# deploy runs off the committed processed corpus directly, without
+# rerunning PDF/Markdown ingestion (Docling) on the server.

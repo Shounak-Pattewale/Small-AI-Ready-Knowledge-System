@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "chunks": [
+    {
+      "text": "Career conversations, internal opportunities, mentoring and progression\n\nDocument status: Fictional sample content created for a knowledge-retrieval prototype.",
+      "source": "career_development.pdf",
+      "section": "Career Development Policy",
+      "page": 1,
+      "chunk_index": 0
+    },
+    {
+      "text": "Regular conversations between an employee and their manager are the main way career development happens day to day, covering current performance, skills to build, and what the employee wants to do next. These conversations happen alongside, not instead of, any formal performance review process, and are expected a few times a year rather than being left to a single annual meeting.",
+      "source": "career_development.pdf",
+      "section": "1. Career conversations",
+      "page": 1,
+      "chunk_index": 1
+    },
+    {
+      "text": "Internal vacancies are advertised on the internal jobs page before, or at the same time as, any external advertising, giving existing employees the opportunity to apply first. Employees can apply directly through the internal jobs page; letting the current manager know is expected as a courtesy but is not a requirement before applying. Applications are assessed against the same criteria as external candidates, based on the specific requirements of the role being filled.",
+      "source": "career_development.pdf",
+      "section": "2. Internal vacancies",
+      "page": 1,
+      "chunk_index": 2
+    },
+    {
+      "text": "Employees can request a mentor through the internal mentoring scheme, which pairs them with a more experienced colleague for regular informal conversations about their development, career direction, and specific challenges they are facing. Mentoring is intended as a source of guidance and perspective rather than a formal assessment. Being mentored does not itself form part of the promotion or recruitment process, and taking part is not a requirement for either.\n\n3.1 Becoming a mentor\n\nAny employee with a few years of experience can volunteer to become a mentor through the same scheme. Mentors are matched based on the areas they feel comfortable advising on, rather than being assigned automatically, and there is no obligation to take on more than one mentoring relationship at a time.",
+      "source": "career_development.pdf",
+      "section": "3. Mentoring",
+      "page": 1,
+      "chunk_index": 3
+    },
+    {
+      "text": "Promotion into a more senior role is based on demonstrated readiness: sustained performance at the higher level, feedback from managers and colleagues, and, for some roles, a specific assessment process. There is no fixed company-wide timetable for promotion - career progression is best discussed regularly with a manager as part of ongoing development rather than tied to a single point in the year.",
+      "source": "career_development.pdf",
+      "section": "4. Promotion",
+      "page": 1,
+      "chunk_index": 4
+    },
+    {
+      "text": "Managers keep a short informal record of career conversations, agreed development actions, and any mentoring or promotion discussions, so progress can be referred back to at the next conversation rather than reconstructed from memory.",
+      "source": "career_development.pdf",
+      "section": "5. Development records",
+      "page": 1,
+      "chunk_index": 5
+    },
+    {
+      "text": "Document status: Fictional sample content created for a knowledge-retrieval prototype.",
+      "source": "employee_handbook.pdf",
+      "section": "Core employment guidance and links to specialist policies",
+      "page": 1,
+      "chunk_index": 6
+    },
+    {
+      "text": "This handbook sets out the general principles that apply to everyone working at the company, and points to the more detailed specialist policies - covering areas like IT security, leave, expenses, and learning - that explain specific procedures in full. Where this handbook and a specialist policy appear to differ, the specialist policy takes precedence for that topic.",
+      "source": "employee_handbook.pdf",
+      "section": "1. Welcome and scope",
+      "page": 1,
+      "chunk_index": 7
+    },
+    {
+      "text": "Employment decisions, including hiring, pay, and promotion, should be based on the requirements of the role and an individual's suitability for it, applied consistently and documented so decisions can be explained if questioned later. Managers are expected to treat this as a baseline expectation rather than a box-ticking exercise.",
+      "source": "employee_handbook.pdf",
+      "section": "2. Employment principles",
+      "page": 1,
+      "chunk_index": 8
+    },
+    {
+      "text": "Normal working hours are agreed with each employee's manager based on the needs of the role and the team. Many roles are eligible for hybrid or remote working, and some allow flexible start and finish times; the Flexible and Remote Working policy explains how these arrangements are agreed, and what to consider when working from a different UK location, occasionally from overseas, or using company equipment away from the office.",
+      "source": "employee_handbook.pdf",
+      "section": "3. Working hours and flexible working",
+      "page": 1,
+      "chunk_index": 9
+    },
+    {
+      "text": "Pay is reviewed periodically in line with the company's normal pay review process, and employees can raise pay-related questions with their manager or the People Team at any time. The company offers a range of employee benefits; details of current benefits, and who is eligible for them, are provided separately through the People Team rather than in this handbook, since they can change from time to time.",
+      "source": "employee_handbook.pdf",
+      "section": "4. Pay and benefits",
+      "page": 1,
+      "chunk_index": 10
+    },
+    {
+      "text": "Everyone is expected to treat colleagues, customers, and partners with respect, and to raise concerns about behaviour that falls short of this rather than letting it continue unaddressed. Serious misconduct is dealt with through the disciplinary process; the People Team can advise on what that involves if it becomes relevant.",
+      "source": "employee_handbook.pdf",
+      "section": "5. Conduct and respect at work",
+      "page": 1,
+      "chunk_index": 11
+    },
+    {
+      "text": "Employees are expected to follow reasonable health and safety guidance for their workplace, whether that's the office or working from home, and to report any accident, near-miss, or safety concern to their manager. IT security expectations, including how to report a lost or stolen device, a suspected phishing message, or a security incident, are covered in full in the IT Support and Security policy.",
+      "source": "employee_handbook.pdf",
+      "section": "6. Health, safety and security",
+      "page": 1,
+      "chunk_index": 12
+    },
+    {
+      "text": "Employees who are worried about something at work, whether a process, a decision, or someone's behaviour, are encouraged to raise it with their manager in the first instance, or with the People Team if that doesn't feel appropriate. Concerns are looked into fairly, and employees should not experience any detriment for raising a genuine concern in good faith.",
+      "source": "employee_handbook.pdf",
+      "section": "7. Raising concerns",
+      "page": 2,
+      "chunk_index": 13
+    },
+    {
+      "text": "Employees who decide to leave should discuss their notice period with their manager as set out in their contract. Practical matters - returning company equipment, final pay, and any outstanding leave - are handled by the manager together with the People Team and Finance as part of the normal leaving process; the Holiday and Leave policy explains how unused annual leave is treated when someone leaves.",
+      "source": "employee_handbook.pdf",
+      "section": "8. Leaving the company",
+      "page": 2,
+      "chunk_index": 14
+    },
+    {
+      "text": "> Synthetic demonstration policy - not an actual company policy. Fictional content written for a software engineering exercise.\n\n**Document owner:** Finance\n**Effective date:** 1 January 2026\n**Review cycle:** Annual",
+      "source": "expenses_business_travel.md",
+      "section": null,
+      "page": null,
+      "chunk_index": 15
+    },
+    {
+      "text": "This policy explains how employees claim back reasonable costs incurred for business purposes, and what is expected when travelling for work, including travel to attend external training or conferences.",
+      "source": "expenses_business_travel.md",
+      "section": "Purpose",
+      "page": null,
+      "chunk_index": 16
+    },
+    {
+      "text": "Business expenses should be submitted through the expenses system as soon as practical after they are incurred, ideally within the same month. Each claim needs a brief business reason - what the cost was for and why it was necessary - and a copy of the receipt or invoice; claims submitted without evidence may be delayed while the missing information is requested.\n\nClaims are reviewed by the employee's manager, who checks that the cost was reasonable and genuinely business-related before approving it. Once approved, reimbursement is paid with the employee's next normal payroll run. Employees should raise any question about whether a particular cost is claimable with their manager before incurring it, rather than after the event.",
+      "source": "expenses_business_travel.md",
+      "section": "1. Submitting claims",
+      "page": null,
+      "chunk_index": 17
+    },
+    {
+      "text": "Standard-class rail travel should normally be used for UK business journeys, booked in advance through the approved travel booking channel where one is available, since advance booking is usually significantly cheaper than buying on the day. First-class travel is not part of standard policy and requires the traveller's manager to approve it in advance, based on a genuine business reason such as needing to work confidentially during the journey.\n\nWhere a journey involves an early start, a late finish, or a change of trains that makes standing for part of the journey likely, employees should mention this when booking so a suitable service can be chosen, rather than assuming a higher class of travel will automatically be approved.",
+      "source": "expenses_business_travel.md",
+      "section": "2. Rail travel",
+      "page": null,
+      "chunk_index": 18
+    },
+    {
+      "text": "Reasonable costs for taxis, parking, and overnight accommodation are claimable when they are a genuine part of a business trip - for example, a taxi taken late at night for safety reasons, or a hotel booked because a same-day return isn't practical. Accommodation should be booked at a reasonable standard for the purpose of the trip rather than the most expensive option available, and meals taken while travelling can be claimed with a receipt as part of the same trip.",
+      "source": "expenses_business_travel.md",
+      "section": "3. Other travel and subsistence",
+      "page": null,
+      "chunk_index": 19
+    },
+    {
+      "text": "Travel and subsistence costs for attending an approved external training course or a work-related conference are claimed in exactly the same way as any other business trip - through the expenses system, with a receipt and a brief note of the event. Attendance itself should already have manager approval before the event (see the Learning and Training policy for how that approval works); the travel costs to get there and back follow this expenses policy.\n\nIf a conference is overseas, the same general expectations apply: standard-class travel where practical, a reasonable standard of accommodation, and manager approval in advance given the additional cost involved in international travel.",
+      "source": "expenses_business_travel.md",
+      "section": "4. Training courses and conferences",
+      "page": null,
+      "chunk_index": 20
+    },
+    {
+      "text": "Hybrid working, location flexibility and temporary working arrangements\n\nDocument status: Fictional sample content created for a knowledge-retrieval prototype.",
+      "source": "flexible_remote_working.pdf",
+      "section": "Flexible and Remote Working Policy",
+      "page": 1,
+      "chunk_index": 21
+    },
+    {
+      "text": "Most roles that can be performed away from the office are eligible for a hybrid working arrangement, agreed individually between an employee and their manager based on the needs of the role and the team. How many days are typically spent working from home versus the office varies by team and is set locally with the manager, rather than following a single fixed company-wide rule.",
+      "source": "flexible_remote_working.pdf",
+      "section": "1. Hybrid and home working",
+      "page": 1,
+      "chunk_index": 22
+    },
+    {
+      "text": "Employees may occasionally work from a different UK location, for example while visiting family, provided they let their manager know in advance and can maintain a secure, reliable connection for their work. This is intended for occasional or short periods rather than a permanent change of work location. Business travel arranged for work purposes is a separate matter and follows the Expenses and Business Travel policy.",
+      "source": "flexible_remote_working.pdf",
+      "section": "2. Working from another UK location",
+      "page": 1,
+      "chunk_index": 23
+    },
+    {
+      "text": "Where the role allows it, an employee may agree a flexible start and finish time with their manager, for example starting earlier to avoid rush hour, or finishing early on a particular day, provided core team meeting times are still covered and the total agreed hours are worked across the week. This is arranged locally with the manager rather than through a formal company-wide scheme.",
+      "source": "flexible_remote_working.pdf",
+      "section": "3. Flexible start and finish times",
+      "page": 1,
+      "chunk_index": 24
+    },
+    {
+      "text": "Company laptops and other issued equipment may be used at home, at another UK location, or while travelling, provided the same security practices apply as in the office - the device should not be left unattended in a public place, and screens should be locked when stepping away. Any fault, loss, or theft is reported in exactly the same way described in the IT Support and Security policy, regardless of where it happens.",
+      "source": "flexible_remote_working.pdf",
+      "section": "4. Company equipment away from the office",
+      "page": 1,
+      "chunk_index": 25
+    },
+    {
+      "text": "Working from outside the UK, even temporarily, requires manager approval in advance and may involve additional checks around tax, right-to-work, and data protection depending on the country and how long the employee plans to be there. Each request is considered on a case-by-case basis rather than being automatic, and employees should raise a request well before any planned travel so these checks can be completed in time.",
+      "source": "flexible_remote_working.pdf",
+      "section": "5. Overseas remote work",
+      "page": 1,
+      "chunk_index": 26
+    },
+    {
+      "text": "Annual leave, carry-over and related absence arrangements\n\nDocument status: Fictional sample content created for a knowledge-retrieval prototype.",
+      "source": "holiday_leave_policy.pdf",
+      "section": "Holiday and Leave Policy",
+      "page": 1,
+      "chunk_index": 27
+    },
+    {
+      "text": "Annual leave entitlement is set out in each employee's contract and is based on full-time equivalent service, adjusted for part-time hours or a part-year start or finish date. The holiday year runs from 1 January to 31 December.",
+      "source": "holiday_leave_policy.pdf",
+      "section": "1. Annual leave entitlement",
+      "page": 1,
+      "chunk_index": 28
+    },
+    {
+      "text": "Leave should be requested through the leave system with as much notice as practical, and is approved by the employee's manager taking into account team cover at the time requested. Employees are encouraged to spread leave across the year rather than leaving most of it until the final months, since late requests for popular periods are less likely to be approved.",
+      "source": "holiday_leave_policy.pdf",
+      "section": "2. Requesting and approving leave",
+      "page": 1,
+      "chunk_index": 29
+    },
+    {
+      "text": "Up to five days of unused annual leave may be carried into the next holiday year, provided the carry-over is agreed with the employee's manager before the end of the current holiday year. Leave that is neither taken nor carried over by the end of the holiday year is lost and cannot be paid out instead.",
+      "source": "holiday_leave_policy.pdf",
+      "section": "3. Carry-over",
+      "page": 1,
+      "chunk_index": 30
+    },
+    {
+      "text": "When an employee leaves the company, any annual leave that has been accrued but not yet taken is paid out along with their final salary payment. If an employee has taken more leave than they have accrued by their leaving date, the excess may be deducted from their final pay.",
+      "source": "holiday_leave_policy.pdf",
+      "section": "4. Leaving employment",
+      "page": 1,
+      "chunk_index": 31
+    },
+    {
+      "text": "An employee who becomes genuinely unwell during a period of booked annual leave should follow the normal sickness reporting process. Days affected by illness during that period may, at the manager's discretion, be treated as sick leave rather than annual leave, provided this is reported promptly.",
+      "source": "holiday_leave_policy.pdf",
+      "section": "5. Sickness during leave",
+      "page": 1,
+      "chunk_index": 32
+    },
+    {
+      "text": "> Synthetic demonstration policy - not an actual company policy. Fictional content written for a software engineering exercise.\n\n**Document owner:** Technology and Security\n**Effective date:** 1 January 2026\n**Review cycle:** Annual",
+      "source": "it_support_security.md",
+      "section": null,
+      "page": null,
+      "chunk_index": 33
+    },
+    {
+      "text": "This policy explains how employees get IT support, what to do when a company laptop develops a fault, how to report a lost or stolen device, how to recognise and report phishing and other suspicious messages, and how to escalate a suspected security incident. It applies to all staff issued with company IT equipment or system access.",
+      "source": "it_support_security.md",
+      "section": "Purpose",
+      "page": null,
+      "chunk_index": 34
+    },
+    {
+      "text": "The IT Service Desk is the first point of contact for any technology problem, from a forgotten password to a printer that won't connect. Requests can be logged through the internal support portal or by emailing the service desk directly; urgent issues that stop someone working can also be phoned in.\n\nWhen logging a request, include the device name or asset tag, a short description of the problem, and anything that was happening immediately before it started - this is usually enough for the service desk to triage the request without a back-and-forth. Most routine requests, such as software access or a peripheral not being recognised, are picked up within one working day.",
+      "source": "it_support_security.md",
+      "section": "1. Service desk and support channels",
+      "page": null,
+      "chunk_index": 35
+    },
+    {
+      "text": "If a company laptop is running slowly, won't turn on, has a cracked screen, a failing battery, or any other hardware or performance problem, log a fault with the Service Desk rather than attempting a repair. Employees should not open the case, replace internal components, or take the device to a third-party repair shop, since this can void the warranty and, in some cases, compromise the device's security configuration.\n\nWhere possible, describe the specific symptom - for example \"screen has a vertical crack\" or \"battery drains within an hour\" - rather than a general \"not working.\" This helps the technician bring the right replacement part or loan device. A loan laptop is normally provided while a fault is being fixed if the employee cannot otherwise work.",
+      "source": "it_support_security.md",
+      "section": "2. Laptop faults and hardware problems",
+      "page": null,
+      "chunk_index": 36
+    },
+    {
+      "text": "A lost or stolen company laptop, phone, or other device must be reported to the Service Desk immediately, and the employee's manager should also be told as soon as practical. Do not wait to see if the device turns up before reporting it - the priority is protecting company data and accounts, not the hardware itself.\n\nAs soon as a report is received, IT Security will attempt to remotely lock the device and, if it cannot be recovered quickly, may remotely wipe it to protect any company data stored locally. The employee will usually be asked to change their account password, and may be asked whether the device was signed in to any company systems at the time it went missing and roughly when and where it was lost, since this helps assess what may be at risk.\n\nIf a device was stolen rather than simply lost, employees are encouraged - though not required - to report the theft to the police, particularly if a crime reference number would help with an insurance claim. That is a separate, personal decision and should never delay the internal report above.",
+      "source": "it_support_security.md",
+      "section": "3. Lost or stolen devices",
+      "page": null,
+      "chunk_index": 37
+    },
+    {
+      "text": "Phishing emails and text messages try to trick employees into clicking a malicious link, opening an infected attachment, or entering their username and password on a fake login page. Suspicious signs include an unexpected sense of urgency, a sender address that doesn't quite match who it claims to be from, and links that don't go where the visible text suggests.\n\nIf a message looks suspicious, do not click any links or open any attachments. Suspected phishing should be reported using the \"report phishing\" option in the email client, or forwarded to the security mailbox if that option isn't available. If an employee has already clicked a link or entered a password on a page they now believe was fake, they should report it straight away rather than waiting - reporting promptly is treated as the responsible action, not something to be penalised for.",
+      "source": "it_support_security.md",
+      "section": "4. Phishing and suspicious messages",
+      "page": null,
+      "chunk_index": 38
+    },
+    {
+      "text": "A security incident is any situation where company data, systems, or accounts may have been accessed, shared, or exposed without authorisation - for example a suspected account compromise, an email sent to the wrong recipient with sensitive information attached, or a device found unlocked and unattended. Suspected incidents should be reported to IT Security as soon as they are noticed.\n\nWhen reporting, include what happened, when it was noticed, and which systems, accounts, or data might be affected; the security team will confirm what else, if anything, is needed. Employees should not attempt to investigate or \"fix\" a suspected compromise on their own, since that can make it harder to understand what actually happened and to contain it properly.",
+      "source": "it_support_security.md",
+      "section": "5. Security incidents and data exposure",
+      "page": null,
+      "chunk_index": 39
+    },
+    {
+      "text": "Company laptops and other issued equipment may be used away from the office, including at home or while travelling, provided the same basic precautions apply as in the office: the device should not be left unattended in a public place, and screens should be locked when stepping away. Any fault, loss, or theft while working away from the office is reported in exactly the same way as described above.",
+      "source": "it_support_security.md",
+      "section": "6. Using equipment away from the office",
+      "page": null,
+      "chunk_index": 40
+    },
+    {
+      "text": "> Synthetic demonstration policy - not an actual company policy. Fictional content written for a software engineering exercise.\n\n**Document owner:** People Team\n**Effective date:** 1 January 2026\n**Review cycle:** Annual",
+      "source": "learning_training.md",
+      "section": null,
+      "page": null,
+      "chunk_index": 41
+    },
+    {
+      "text": "This policy explains how employees can access internal learning, request approval for external courses, get support for professional certifications, and attend relevant conferences.",
+      "source": "learning_training.md",
+      "section": "Purpose",
+      "page": null,
+      "chunk_index": 42
+    },
+    {
+      "text": "A range of internal learning resources - short courses, recorded sessions, and guides covering common tools and skills - are available through the internal learning platform at any time, without needing manager approval. Employees are encouraged to set aside a small amount of time regularly to keep skills up to date, in discussion with their manager about what's most useful for their role.",
+      "source": "learning_training.md",
+      "section": "1. Internal learning",
+      "page": null,
+      "chunk_index": 43
+    },
+    {
+      "text": "Employees can request approval to attend an external training course relevant to their role by discussing it with their manager and briefly explaining what the course covers and how it supports their work. Approved course fees are paid directly by the company where possible, or reimbursed through the expenses system if the employee has to pay upfront. Travel costs to attend an external course are claimed separately - see the Expenses and Business Travel policy.",
+      "source": "learning_training.md",
+      "section": "2. External courses",
+      "page": null,
+      "chunk_index": 44
+    },
+    {
+      "text": "Support for professional certifications - such as exam fees or revision materials - is considered case by case and agreed with a manager before the employee registers or pays for anything. Support depends on how directly the certification relates to the employee's current or likely future role, and each request is judged on its own merits rather than under a single fixed allowance that applies to everyone.",
+      "source": "learning_training.md",
+      "section": "3. Professional certifications",
+      "page": null,
+      "chunk_index": 45
+    },
+    {
+      "text": "Attending a relevant industry conference, including one overseas, can be approved by a manager where there is a clear benefit to the employee's role or team - for example presenting work, building useful external contacts, or learning about developments relevant to the team. Conference and associated travel costs follow the same approval and claims process as other business travel; see the Expenses and Business Travel policy for how to claim them.",
+      "source": "learning_training.md",
+      "section": "4. Conferences",
+      "page": null,
+      "chunk_index": 46
+    },
+    {
+      "text": "Managers keep a short informal record of approved training, certifications, and conference attendance as part of ongoing development conversations, so progress can be referred back to at a later review rather than needing to be reconstructed from scratch each time.",
+      "source": "learning_training.md",
+      "section": "5. Records",
+      "page": null,
+      "chunk_index": 47
+    }
+  ]
+}
