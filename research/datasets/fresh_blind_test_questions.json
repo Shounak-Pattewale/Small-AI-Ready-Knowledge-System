@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "purpose": "Fresh blind evaluation set for frozen answerability pipelines. Do not use for threshold selection or tuning.",
+  "rules": [
+    "Evaluate only after model and thresholds are frozen.",
+    "Do not optimize thresholds using this file.",
+    "Do not modify questions after observing model predictions.",
+    "expected_source and expected_topic are evaluation labels only and must never be used as model features."
+  ],
+  "frozen_configuration": {
+    "retriever": "ibm-granite/granite-embedding-small-english-r2",
+    "retrieval_depth": 1,
+    "qa_model": "deepset/minilm-uncased-squad2",
+    "qa_signal": "best_span_score - null_score",
+    "qa_threshold": -5.7906,
+    "cosine_baseline_rule": {
+      "top1_min": 0.8591,
+      "top1_top2_gap_min": 0.0049
+    }
+  },
+  "counts": {
+    "total": 30,
+    "answerable": 15,
+    "unanswerable": 15
+  },
+  "questions": [
+    {
+      "id": "blind_a01",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "My company laptop has gone missing while I was travelling. What should I do?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Lost or stolen devices"
+    },
+    {
+      "id": "blind_a02",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "I received an email that looks like it may be trying to steal my login details. How should I handle it?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Phishing and suspicious messages"
+    },
+    {
+      "id": "blind_a03",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "What is the process for claiming money back after paying a business expense?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Submitting claims"
+    },
+    {
+      "id": "blind_a04",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "I need to take a train for a work trip. What does the policy say about rail travel?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Rail travel"
+    },
+    {
+      "id": "blind_a05",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "What happens to annual leave I still have when my employment ends?",
+      "answerable": true,
+      "expected_source": "holiday_leave_policy.pdf",
+      "expected_topic": "Leaving employment"
+    },
+    {
+      "id": "blind_a06",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "Can unused annual leave be moved into the following leave year?",
+      "answerable": true,
+      "expected_source": "holiday_leave_policy.pdf",
+      "expected_topic": "Carry-over"
+    },
+    {
+      "id": "blind_a07",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "I want to do my normal job remotely while staying in a different UK city. What policy applies?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Working from another UK location"
+    },
+    {
+      "id": "blind_a08",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "Is there guidance on changing the time I start and finish my working day?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Flexible start and finish times"
+    },
+    {
+      "id": "blind_a09",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "Where can I find information about moving to another role within the company?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Internal vacancies"
+    },
+    {
+      "id": "blind_a10",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "Can I get career guidance from a more experienced colleague through a mentoring arrangement?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Mentoring"
+    },
+    {
+      "id": "blind_a11",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "What support is described for taking a professional certification related to my work?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Professional certifications"
+    },
+    {
+      "id": "blind_a12",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "I found a course run by an organisation outside the company. What guidance covers this?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "External courses"
+    },
+    {
+      "id": "blind_a13",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "What guidance should I follow if company information may have been exposed because of something I did?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Security incidents"
+    },
+    {
+      "id": "blind_a14",
+      "split": "blind_test",
+      "category": "paraphrase",
+      "question": "What does the policy say about doing my job remotely from outside the UK?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Overseas remote work"
+    },
+    {
+      "id": "blind_a15",
+      "split": "blind_test",
+      "category": "semantic",
+      "question": "Is there guidance for employees who want to attend a professional conference?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Conferences"
+    },
+    {
+      "id": "blind_u01",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_amount",
+      "question": "What exact cash allowance do I receive when my company laptop is stolen?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u02",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_deadline",
+      "question": "Exactly how many hours after receiving a phishing email do I have to report it?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u03",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "unsupported_exception",
+      "question": "If no standard train seats are available, does the policy automatically allow me to buy a first-class ticket?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u04",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_limit",
+      "question": "What is the absolute maximum number of expense claims an employee may submit in one month?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u05",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "unsupported_exception",
+      "question": "Can my manager always approve unlimited annual-leave carry-over when I have a busy workload?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u06",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_amount",
+      "question": "What exact monthly payment do employees receive for working remotely from another UK city?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u07",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_entitlement",
+      "question": "How many remote-working days per month is every employee guaranteed regardless of their role?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u08",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "unsupported_consequence",
+      "question": "Does joining the mentoring programme automatically guarantee that I will be promoted within a year?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u09",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_amount",
+      "question": "What exact percentage salary increase is guaranteed after I complete a professional certification?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u10",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_limit",
+      "question": "What is the maximum number of external training courses an employee is allowed to take during their career?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u11",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "unsupported_consequence",
+      "question": "Does attending a professional conference guarantee an interview for the next internal vacancy I apply for?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u12",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "missing_deadline",
+      "question": "What exact number of minutes do I have to report a suspected company-data security incident?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u13",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "unsupported_exception",
+      "question": "If my manager approves it, can I work remotely from any country indefinitely without any further checks?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u14",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "false_premise",
+      "question": "Which cryptocurrency does the company use to reimburse approved business expenses?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    },
+    {
+      "id": "blind_u15",
+      "split": "blind_test",
+      "category": "unanswerable",
+      "negative_type": "absent_topic",
+      "question": "What company-funded childcare allowance is provided for employees with young children?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null
+    }
+  ]
+}

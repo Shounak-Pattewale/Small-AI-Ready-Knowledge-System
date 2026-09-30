@@ -1,0 +1,636 @@
+{
+  "schema_version": 2,
+  "notes": {
+    "split_policy": "Use development for threshold selection. Keep heldout untouched until the rule is frozen, then evaluate it once.",
+    "label_policy": "expected_source/expected_topic are evaluation labels only and must never be used as answerability features."
+  },
+  "questions": [
+    {
+      "id": "direct_01",
+      "split": "development",
+      "category": "direct",
+      "question": "What should I do if my company device is lost or stolen?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Lost or stolen devices"
+    },
+    {
+      "id": "direct_02",
+      "split": "development",
+      "category": "direct",
+      "question": "How do I submit an expense claim?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Submitting claims"
+    },
+    {
+      "id": "direct_03",
+      "split": "development",
+      "category": "direct",
+      "question": "Can I carry over unused annual leave into the next year?",
+      "answerable": true,
+      "expected_source": "holiday_leave_policy.pdf",
+      "expected_topic": "Carry-over"
+    },
+    {
+      "id": "direct_04",
+      "split": "development",
+      "category": "direct",
+      "question": "What should I do if I receive a suspicious phishing message?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Phishing and suspicious messages"
+    },
+    {
+      "id": "direct_05",
+      "split": "development",
+      "category": "direct",
+      "question": "How do I apply for an internal vacancy?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Internal vacancies"
+    },
+    {
+      "id": "direct_06",
+      "split": "development",
+      "category": "direct",
+      "question": "What is the policy for rail travel expenses?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Rail travel"
+    },
+    {
+      "id": "direct_07",
+      "split": "development",
+      "category": "direct",
+      "question": "Can I work remotely from another location in the UK?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Working from another UK location"
+    },
+    {
+      "id": "direct_08",
+      "split": "development",
+      "category": "direct",
+      "question": "Does the company support professional certifications?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Professional certifications"
+    },
+    {
+      "id": "paraphrase_01",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "My work laptop has disappeared. What should I do?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Lost or stolen devices"
+    },
+    {
+      "id": "paraphrase_02",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "What happens to holiday I have not used by the end of the year?",
+      "answerable": true,
+      "expected_source": "holiday_leave_policy.pdf",
+      "expected_topic": "Carry-over"
+    },
+    {
+      "id": "paraphrase_03",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "Can I take a course from an outside training provider?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "External courses"
+    },
+    {
+      "id": "paraphrase_04",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "How can I move into another job inside the company?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Internal vacancies"
+    },
+    {
+      "id": "paraphrase_05",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "Am I allowed to work from somewhere else in Britain?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Working from another UK location"
+    },
+    {
+      "id": "paraphrase_06",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "My train journey was for work. Can I claim the cost back?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Rail travel"
+    },
+    {
+      "id": "paraphrase_07",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "What happens to unused holiday if I leave the company?",
+      "answerable": true,
+      "expected_source": "holiday_leave_policy.pdf",
+      "expected_topic": "Leaving employment"
+    },
+    {
+      "id": "paraphrase_08",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "I clicked something that might have exposed company information. What should I do?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Security incidents"
+    },
+    {
+      "id": "semantic_01",
+      "split": "development",
+      "category": "semantic",
+      "question": "Can I WFH from a different city for a while?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Working from another UK location"
+    },
+    {
+      "id": "semantic_02",
+      "split": "development",
+      "category": "semantic",
+      "question": "Will work cover the cost of improving my professional qualifications?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Professional certifications"
+    },
+    {
+      "id": "semantic_03",
+      "split": "development",
+      "category": "semantic",
+      "question": "I think someone may have accessed confidential company data through me. What should I do?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Security incidents"
+    },
+    {
+      "id": "semantic_04",
+      "split": "development",
+      "category": "semantic",
+      "question": "I want someone experienced to guide me with my career. Is that available?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Mentoring"
+    },
+    {
+      "id": "semantic_05",
+      "split": "development",
+      "category": "semantic",
+      "question": "Can I change when I begin and finish work each day?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Flexible start and finish times"
+    },
+    {
+      "id": "ambiguous_01",
+      "split": "development",
+      "category": "ambiguous",
+      "question": "Can I claim travel costs for attending a training course?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Training expenses",
+      "acceptable_sources": [
+        "expenses_business_travel.md",
+        "learning_training.md"
+      ]
+    },
+    {
+      "id": "ambiguous_02",
+      "split": "development",
+      "category": "ambiguous",
+      "question": "What are the rules for using my work laptop away from the office?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Company equipment",
+      "acceptable_sources": [
+        "flexible_remote_working.pdf",
+        "it_support_security.md"
+      ]
+    },
+    {
+      "id": "ambiguous_03",
+      "split": "development",
+      "category": "ambiguous",
+      "question": "What should I know about attending a conference abroad?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Conferences",
+      "acceptable_sources": [
+        "learning_training.md",
+        "expenses_business_travel.md",
+        "employee_handbook.pdf"
+      ]
+    },
+    {
+      "id": "ambiguous_04",
+      "split": "development",
+      "category": "ambiguous",
+      "question": "Can I work remotely from another country?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Overseas remote work",
+      "acceptable_sources": [
+        "flexible_remote_working.pdf",
+        "employee_handbook.pdf"
+      ]
+    },
+    {
+      "id": "unanswerable_01",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "What maternity pay entitlement does the company provide?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "absent_topic"
+    },
+    {
+      "id": "unanswerable_02",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "Which private health insurance provider does the company use?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "absent_topic"
+    },
+    {
+      "id": "unanswerable_03",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "How many company shares will I receive after three years?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "absent_topic"
+    },
+    {
+      "id": "unanswerable_04",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "What exact annual bonus percentage do software engineers receive?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "absent_topic"
+    },
+    {
+      "id": "unanswerable_05",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "Will the company reimburse my gym membership?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "absent_topic"
+    },
+    {
+      "id": "unanswerable_06",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "How many days do I have to report a stolen company laptop before disciplinary action begins?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_deadline"
+    },
+    {
+      "id": "unanswerable_07",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "If standard-class train tickets are sold out, will the company reimburse first-class rail travel?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_exception"
+    },
+    {
+      "id": "unanswerable_08",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "What is the maximum number of annual leave days I can carry over if my manager gives special approval?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_exception"
+    },
+    {
+      "id": "unanswerable_09",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "What exact amount will the company pay toward a professional certification exam?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_amount"
+    },
+    {
+      "id": "unanswerable_10",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "How many days per month am I guaranteed to work remotely from home?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_entitlement"
+    },
+    {
+      "id": "unanswerable_11",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "If I work from another UK city, will the company pay for my accommodation there?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_expense"
+    },
+    {
+      "id": "unanswerable_12",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "Will I automatically be promoted after completing a mentoring programme?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "false_premise"
+    },
+    {
+      "id": "unanswerable_13",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "What is the maximum hotel price per night for an overseas conference?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_limit"
+    },
+    {
+      "id": "unanswerable_14",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "If I accidentally click a phishing link, will I personally have to pay for any resulting loss?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_consequence"
+    },
+    {
+      "id": "unanswerable_15",
+      "split": "development",
+      "category": "unanswerable",
+      "question": "How many external training courses is every employee guaranteed each year?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_entitlement"
+    },
+    {
+      "id": "answerable_dev_01",
+      "split": "development",
+      "category": "semantic",
+      "question": "I need career advice from a more experienced colleague. Is there a mentoring option?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Mentoring"
+    },
+    {
+      "id": "answerable_dev_02",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "I am travelling by train for company business. What expense rules apply?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Rail travel"
+    },
+    {
+      "id": "answerable_dev_03",
+      "split": "development",
+      "category": "semantic",
+      "question": "I want to temporarily do my job from another place within the UK. What policy covers this?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Working from another UK location"
+    },
+    {
+      "id": "answerable_dev_04",
+      "split": "development",
+      "category": "paraphrase",
+      "question": "Where should I report a message that looks like it is trying to steal my login details?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Phishing and suspicious messages"
+    },
+    {
+      "id": "answerable_dev_05",
+      "split": "development",
+      "category": "semantic",
+      "question": "I want to earn an industry qualification related to my role. Is there company support for that?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Professional certifications"
+    },
+    {
+      "id": "heldout_a01",
+      "split": "heldout",
+      "category": "paraphrase",
+      "question": "I still have holiday left. Can any of it move into the following leave year?",
+      "answerable": true,
+      "expected_source": "holiday_leave_policy.pdf",
+      "expected_topic": "Carry-over"
+    },
+    {
+      "id": "heldout_a02",
+      "split": "heldout",
+      "category": "semantic",
+      "question": "I may have caused a company-data security problem. Who should I tell?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Security incidents"
+    },
+    {
+      "id": "heldout_a03",
+      "split": "heldout",
+      "category": "paraphrase",
+      "question": "I found a role advertised inside the organisation that I want to move into. What is the process?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Internal vacancies"
+    },
+    {
+      "id": "heldout_a04",
+      "split": "heldout",
+      "category": "semantic",
+      "question": "Could I shift my daily working hours earlier or later?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Flexible start and finish times"
+    },
+    {
+      "id": "heldout_a05",
+      "split": "heldout",
+      "category": "paraphrase",
+      "question": "Can the business support me taking a qualification that is relevant to my job?",
+      "answerable": true,
+      "expected_source": "learning_training.md",
+      "expected_topic": "Professional certifications"
+    },
+    {
+      "id": "heldout_a06",
+      "split": "heldout",
+      "category": "direct",
+      "question": "What should I do when a company laptop is stolen?",
+      "answerable": true,
+      "expected_source": "it_support_security.md",
+      "expected_topic": "Lost or stolen devices"
+    },
+    {
+      "id": "heldout_a07",
+      "split": "heldout",
+      "category": "semantic",
+      "question": "If I travel by train for work, how is that handled for expenses?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Rail travel"
+    },
+    {
+      "id": "heldout_a08",
+      "split": "heldout",
+      "category": "paraphrase",
+      "question": "Can I temporarily work from a different place in the UK rather than my normal workplace?",
+      "answerable": true,
+      "expected_source": "flexible_remote_working.pdf",
+      "expected_topic": "Working from another UK location"
+    },
+    {
+      "id": "heldout_a09",
+      "split": "heldout",
+      "category": "semantic",
+      "question": "Is there a way to get career guidance from a mentor at work?",
+      "answerable": true,
+      "expected_source": "career_development.pdf",
+      "expected_topic": "Mentoring"
+    },
+    {
+      "id": "heldout_a10",
+      "split": "heldout",
+      "category": "direct",
+      "question": "How are expense claims submitted?",
+      "answerable": true,
+      "expected_source": "expenses_business_travel.md",
+      "expected_topic": "Submitting claims"
+    },
+    {
+      "id": "heldout_u01",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "If my laptop is stolen while abroad, what cash penalty will I have to pay the company?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_consequence"
+    },
+    {
+      "id": "heldout_u02",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "Can my manager approve carrying over ten extra holiday days beyond the normal policy limit?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_exception"
+    },
+    {
+      "id": "heldout_u03",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "What percentage of my salary will the company pay toward an external university degree?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_amount"
+    },
+    {
+      "id": "heldout_u04",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "If I work remotely from another UK city, how many hotel nights will the company reimburse each month?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_expense"
+    },
+    {
+      "id": "heldout_u05",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "What guaranteed salary increase will I receive after gaining a professional certification?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "false_premise"
+    },
+    {
+      "id": "heldout_u06",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "How many failed phishing simulations are allowed before an employee is dismissed?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_limit"
+    },
+    {
+      "id": "heldout_u07",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "What is the exact daily meal allowance when travelling to a training course?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_amount"
+    },
+    {
+      "id": "heldout_u08",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "Does completing the mentoring programme guarantee an interview for every internal vacancy?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "false_premise"
+    },
+    {
+      "id": "heldout_u09",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "What is the maximum number of overseas remote-working days automatically approved each year?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "missing_entitlement"
+    },
+    {
+      "id": "heldout_u10",
+      "split": "heldout",
+      "category": "unanswerable",
+      "question": "If first-class rail is the only ticket left, is it always reimbursed without prior approval?",
+      "answerable": false,
+      "expected_source": null,
+      "expected_topic": null,
+      "negative_type": "unsupported_exception"
+    }
+  ]
+}

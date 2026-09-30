@@ -1,0 +1,4 @@
+# Extra dependency for research/ only - production and tests/ never import this.
+# Install in addition to the root requirements.txt to run archived TF-IDF experiments
+# (research/evaluation/_tfidf.py, evaluate_tfidf.py) and their tests.
+scikit-learn
