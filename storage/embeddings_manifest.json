@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "model_id": "ibm-granite/granite-embedding-small-english-r2",
+  "embedding_dimension": 384,
+  "chunk_count": 48,
+  "normalized": true,
+  "chunk_fingerprint": "8caee2c0fd7ba5d9f7db39ed33c919dfdd49273449f450604f64aefac297d963"
+}
