@@ -16,8 +16,12 @@ Built as a NALITS AI Solution Engineer take-home submission.
 ## Demo / Interface
 
 A minimal Flask web UI (`GET /`) lets you type a question and see the answer with its
-source. A terminal CLI (`cli.py`) offers the same question/answer loop without a browser,
-in either LLM or baseline mode (see [Running the CLI](#running-the-cli)).
+source. The initial screen offers four clickable example questions, and a persistent
+side panel lists 15 more grouped by topic; clicking any of them submits it immediately
+through the same request path as a typed question. All questions go through the same
+`/demo` endpoint, rate-limited to 10 requests/minute/IP. A terminal CLI (`cli.py`)
+offers the same question/answer loop without a
+browser, in either LLM or baseline mode (see [Running the CLI](#running-the-cli)).
 
 ## Knowledge Base
 

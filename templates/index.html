@@ -7,18 +7,29 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+  <div class="layout">
   <main class="chat">
     <header class="chat__header">
       <span class="chat__mark" aria-hidden="true">&#9670;</span>
       <div class="chat__heading">
         <h1>Knowledge Assistant</h1>
-        <p>Internal company knowledge</p>
+        <p>Demo</p>
       </div>
     </header>
 
     <div class="chat__messages" id="messages" aria-live="polite" aria-relevant="additions">
       <div class="msg msg--assistant">
         <div class="msg__bubble">Ask me about company policies, IT support, expenses, leave, training, or working arrangements.</div>
+      </div>
+    </div>
+
+    <div class="suggestions" id="suggestions">
+      <p class="suggestions__label">Try asking</p>
+      <div class="suggestions__list">
+        <button type="button" class="suggestion" data-question="Can I work from home whenever I want?">Can I work from home whenever I want?</button>
+        <button type="button" class="suggestion" data-question="What expenses can I claim when travelling for work?">What expenses can I claim when travelling for work?</button>
+        <button type="button" class="suggestion" data-question="Can I carry unused annual leave into next year?">Can I carry unused annual leave into next year?</button>
+        <button type="button" class="suggestion" data-question="Is mentoring available for career development?">Is mentoring available for career development?</button>
       </div>
     </div>
 
@@ -39,6 +50,61 @@
       </button>
     </form>
   </main>
+
+  <aside class="examples" id="examples-panel">
+    <button type="button" class="examples__toggle" id="examples-toggle" aria-expanded="false" aria-controls="examples-content">
+      <span class="examples__toggle-text">Example questions</span>
+      <svg class="examples__chevron" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
+        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <div class="examples__content" id="examples-content">
+      <p class="examples__hint">Explore the demo knowledge base</p>
+      <div class="examples__scroll">
+
+        <div class="examples__group">
+          <h2 class="examples__category">Remote work</h2>
+          <button type="button" class="example" data-question="Can I work from home whenever I want?">Can I work from home whenever I want?</button>
+          <button type="button" class="example" data-question="How often can I work from home?">How often can I work from home?</button>
+          <button type="button" class="example" data-question="Can I work remotely from another country?">Can I work remotely from another country?</button>
+        </div>
+
+        <div class="examples__group">
+          <h2 class="examples__category">Holiday</h2>
+          <button type="button" class="example" data-question="Can I carry unused annual leave into next year?">Can I carry unused annual leave into next year?</button>
+          <button type="button" class="example" data-question="How much annual leave can I carry over?">How much annual leave can I carry over?</button>
+          <button type="button" class="example" data-question="What happens to unused holiday at the end of the year?">What happens to unused holiday at the end of the year?</button>
+        </div>
+
+        <div class="examples__group">
+          <h2 class="examples__category">Expenses</h2>
+          <button type="button" class="example" data-question="What expenses can I claim when travelling for work?">What expenses can I claim when travelling for work?</button>
+          <button type="button" class="example" data-question="Can I claim meals while travelling for work?">Can I claim meals while travelling for work?</button>
+          <button type="button" class="example" data-question="Can I claim taxi or parking expenses on a business trip?">Can I claim taxi or parking expenses on a business trip?</button>
+        </div>
+
+        <div class="examples__group">
+          <h2 class="examples__category">IT &amp; security</h2>
+          <button type="button" class="example" data-question="What should I do if my company laptop is stolen?">What should I do if my company laptop is stolen?</button>
+          <button type="button" class="example" data-question="Who should I contact if I lose a company device?">Who should I contact if I lose a company device?</button>
+        </div>
+
+        <div class="examples__group">
+          <h2 class="examples__category">Career development</h2>
+          <button type="button" class="example" data-question="Is mentoring available for career development?">Is mentoring available for career development?</button>
+          <button type="button" class="example" data-question="How does the company mentoring scheme work?">How does the company mentoring scheme work?</button>
+        </div>
+
+        <div class="examples__group">
+          <h2 class="examples__category">Learning &amp; training</h2>
+          <button type="button" class="example" data-question="What learning and training support is available to employees?">What learning and training support is available to employees?</button>
+          <button type="button" class="example" data-question="Does the company provide internal training opportunities?">Does the company provide internal training opportunities?</button>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+  </div>
 
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>

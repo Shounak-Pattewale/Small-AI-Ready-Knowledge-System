@@ -81,6 +81,18 @@ def test_index_does_not_call_service():
     assert service.ask_calls == []
 
 
+def test_index_renders_sample_questions():
+    client, _ = _make_client()
+    response = client.get("/")
+    for question in [
+        b"Can I work from home whenever I want?",
+        b"What expenses can I claim when travelling for work?",
+        b"Can I carry unused annual leave into next year?",
+        b"Is mentoring available for career development?",
+    ]:
+        assert question in response.data
+
+
 # --- HEALTH ---
 
 

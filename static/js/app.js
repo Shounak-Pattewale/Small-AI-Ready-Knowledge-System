@@ -12,6 +12,11 @@
   const textarea = document.getElementById("question");
   const sendButton = document.getElementById("send-button");
   const messages = document.getElementById("messages");
+  const suggestions = document.getElementById("suggestions");
+  const suggestionButtons = document.querySelectorAll(".suggestion");
+  const exampleButtons = document.querySelectorAll(".example");
+  const examplesPanel = document.getElementById("examples-panel");
+  const examplesToggle = document.getElementById("examples-toggle");
 
   let requestInFlight = false;
 
@@ -122,6 +127,30 @@
     requestInFlight = isLoading;
     sendButton.disabled = isLoading;
     textarea.disabled = isLoading;
+    suggestionButtons.forEach(function (button) {
+      button.disabled = isLoading;
+    });
+    exampleButtons.forEach(function (button) {
+      button.disabled = isLoading;
+    });
+  }
+
+  function hideSuggestions() {
+    if (suggestions) suggestions.remove();
+  }
+
+  // Shared entry point for both typed submissions and sample-question clicks -
+  // one request path, one place that appends the user bubble and calls /demo.
+  // Returns true if the question was accepted and submitted.
+  function askQuestion(question) {
+    if (requestInFlight) return false;
+    if (!question) return false;
+    if (question.length > MAX_QUESTION_LENGTH) return false; // server remains authoritative either way
+
+    hideSuggestions(); // initial-state-only, per session - never reappears after the first question
+    appendUserMessage(question);
+    submitQuestion(question);
+    return true;
   }
 
   function errorMessageFor(status, body) {
@@ -176,18 +205,34 @@
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-    if (requestInFlight) return;
-
     const question = textarea.value.trim();
-    if (!question) return;
-    if (question.length > MAX_QUESTION_LENGTH) return; // server remains authoritative either way
-
-    appendUserMessage(question);
+    if (!askQuestion(question)) return;
     textarea.value = "";
     textarea.style.height = "auto";
-
-    submitQuestion(question);
   });
+
+  suggestionButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      askQuestion(button.dataset.question);
+    });
+  });
+
+  // Right-side example panel: same shared askQuestion() path, never hidden by
+  // the conversation starting - unlike the fresh-chat suggestions above.
+  exampleButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      askQuestion(button.dataset.question);
+    });
+  });
+
+  // Mobile-only collapsible drawer (hidden by CSS on wide viewports, where the
+  // toggle button itself is not shown and the panel is always visible).
+  if (examplesToggle && examplesPanel) {
+    examplesToggle.addEventListener("click", function () {
+      const isOpen = examplesPanel.classList.toggle("examples--open");
+      examplesToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
 
   textarea.addEventListener("keydown", function (event) {
     if (event.key === "Enter" && !event.shiftKey) {
