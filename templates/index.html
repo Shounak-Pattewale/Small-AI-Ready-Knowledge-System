@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knowledge Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="chat">
+    <header class="chat__header">
+      <span class="chat__mark" aria-hidden="true">&#9670;</span>
+      <div class="chat__heading">
+        <h1>Knowledge Assistant</h1>
+        <p>Internal company knowledge</p>
+      </div>
+    </header>
+
+    <div class="chat__messages" id="messages" aria-live="polite" aria-relevant="additions">
+      <div class="msg msg--assistant">
+        <div class="msg__bubble">Ask me about company policies, IT support, expenses, leave, training, or working arrangements.</div>
+      </div>
+    </div>
+
+    <form class="chat__input" id="chat-form" autocomplete="off">
+      <label for="question" class="sr-only">Ask a question</label>
+      <textarea
+        id="question"
+        name="question"
+        rows="1"
+        maxlength="1000"
+        placeholder="Ask about company policies..."
+        aria-label="Ask a question"
+      ></textarea>
+      <button type="submit" id="send-button" aria-label="Send question">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path d="M3 11l18-8-8 18-2-8-8-2z" fill="currentColor" />
+        </svg>
+      </button>
+    </form>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
