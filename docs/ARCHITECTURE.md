@@ -22,7 +22,7 @@ that isn't actually in the knowledge base. Generative AI is explicitly not requi
 - Extract a real answer from that passage, not a fabricated one.
 - Cite the source (and section/page, when available).
 - Decline to answer honestly, rather than guess, when the evidence is insufficient.
-- Stay small enough to explain end-to-end in an interview - no component whose presence can't be
+- Stay small enough to explain end-to-end - no component whose presence can't be
   justified by a measured result.
 
 ## 3. Final architecture

@@ -18,7 +18,7 @@ Everything the production application needs lives under `src/`, `data/`, `storag
   corpus (`storage/chunks.json`, `storage/embeddings.npy`).
 - **Engineering decision history** - `docs/EVALUATION_HISTORY.md` explains *why* each architecture
   choice was made; this directory is the code that produced that evidence.
-- **Interview/reviewer reference** - a reviewer can see the actual comparisons, not just the
+- **Reviewer reference** - a reviewer can see the actual comparisons, not just the
   conclusions.
 - **Future fallback** - if a production assumption changes (e.g. Ollama Cloud becomes unavailable),
   the rejected non-LLM alternatives are still here, fully implemented and tested, not deleted.
